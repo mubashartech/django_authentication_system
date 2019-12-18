@@ -1,0 +1,5 @@
+<form method="POST" action="{% url 'dashboard' %}" >
+	{% csrf_token %}
+	{{form.as_p}}
+	<button>login</button>
+</form>
